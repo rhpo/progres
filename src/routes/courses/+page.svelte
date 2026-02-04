@@ -2,32 +2,32 @@
     const courses = [
         {
             id: 1,
-            name: "Advanced Software Engineering",
-            code: "ASE-501",
+            name: "Interface Homme Machine (IHM)",
+            code: "Mr. Riyad Abdelmeziem",
             credits: 6,
             progress: 75,
             color: "#1a7c50",
         },
         {
             id: 2,
-            name: "Advanced Database Systems",
-            code: "ADS-502",
+            name: "Données Semi Structurés (DSS)",
+            code: "Mr. Selmoune Nazih",
             credits: 6,
             progress: 40,
             color: "#007aff",
         },
         {
             id: 3,
-            name: "Network Security & Crypto",
-            code: "NSC-503",
+            name: "Programmation Orientée Objet",
+            code: "Mr. SAADI",
             credits: 4,
             progress: 90,
             color: "#af52de",
         },
         {
             id: 4,
-            name: "Cloud Computing Architecture",
-            code: "CCA-504",
+            name: "Recherche Information",
+            code: "Mr. Mahmoudi",
             credits: 4,
             progress: 20,
             color: "#ff9500",
@@ -50,7 +50,7 @@
                     >
                         {course.name
                             .split(" ")
-                            .map((n) => n[0])
+                            .map((n) => (n[0] !== "(" ? n[0] : ""))
                             .join("")}
                     </div>
                     <div class="name-box">

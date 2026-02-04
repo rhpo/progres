@@ -8,7 +8,7 @@
         {
             time: "09\n00",
             type: "TD",
-            name: "Artificial intelligence 2",
+            name: "IHM (Interface Homme Machine)",
             code: "ISC542",
             prof: "DR.Bensaid",
             color: "#8e8e93",
@@ -17,7 +17,7 @@
         {
             time: "11\n30",
             type: "Cours",
-            name: "Artificial intelligence 2",
+            name: "IHM (Interface Homme Machine)",
             code: "ISC542",
             prof: "DR.Bensaid",
             color: "#1a7c50",
@@ -25,15 +25,15 @@
         {
             time: "14\n00",
             type: "TP",
-            name: "Artificial intelligence 2",
+            name: "DSS (Données Semi Structurées)",
             code: "ISC542",
             prof: "DR.Bensaid",
             color: "#007aff",
         },
         {
-            time: "14\n00",
+            time: "16\n00",
             type: "TD",
-            name: "Artificial intelligence 2",
+            name: "DSS (Données Semi Structurées)",
             code: "ISC542",
             prof: "DR.Bensaid",
             color: "#f1c40f",
@@ -48,7 +48,7 @@
                 {
                     time: "14\n00",
                     type: "TP",
-                    name: "Artificial intelligence 2",
+                    name: "IHM (Interface Homme Machine)",
                     code: "ISC542",
                     prof: "DR.Bensaid",
                     color: "#007aff",
@@ -61,7 +61,7 @@
                 {
                     time: "11\n30",
                     type: "Cours",
-                    name: "Artificial intelligence 2",
+                    name: "IHM (Interface Homme Machine)",
                     code: "ISC542",
                     prof: "DR.Bensaid",
                     color: "#1a7c50",
@@ -69,7 +69,7 @@
                 {
                     time: "14\n00",
                     type: "TP",
-                    name: "Artificial intelligence 2",
+                    name: "IHM (Interface Homme Machine)",
                     code: "ISC542",
                     prof: "DR.Bensaid",
                     color: "#007aff",
@@ -82,7 +82,7 @@
                 {
                     time: "14\n00",
                     type: "TD",
-                    name: "Artificial intelligence 2",
+                    name: "IHM (Interface Homme Machine)",
                     code: "ISC542",
                     prof: "DR.Bensaid",
                     color: "#f1c40f",

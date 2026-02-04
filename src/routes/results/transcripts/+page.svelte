@@ -6,19 +6,19 @@
     let selectedYear = $state("2025/2026");
 
     const modules = [
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
         { name: "Advanced Database", coef: 3, average: 14.0 },
         {
-            name: "Advanced Software Engineering",
+            name: "Interface Homme-Machine",
             coef: 3,
             average: 9.5,
             fail: true,
         },
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
+        { name: "Interface Homme-Machine", coef: 3, average: 12.5 },
     ];
 </script>
 

@@ -5,37 +5,37 @@
     let activeTab = $state("grades");
 
     const grades = [
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
         { name: "Advanced Database", coef: 3, grade: 14.0 },
         {
-            name: "Advanced Software Engineering",
+            name: "Interface Homme Machine",
             coef: 3,
             grade: 9.5,
             fail: true,
         },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
-        { name: "Advanced Software Engineering", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
+        { name: "Interface Homme Machine", coef: 3, grade: 12.5 },
     ];
 
     const assessments = [
-        { name: "Advanced Software Engineering", td: 13.0, tp: 12.5 },
+        { name: "Interface Homme Machine", td: 13.0, tp: 12.5 },
         { name: "Advanced Database", td: 9.0, tp: 14.0, td_fail: true },
         {
-            name: "Advanced Software Engineering",
+            name: "Interface Homme Machine",
             td: 10.0,
             tp: 9.5,
             tp_fail: true,
         },
-        { name: "Advanced Software Engineering", td: 10.0, tp: 12.5 },
-        { name: "Advanced Software Engineering", td: 10.0, tp: 12.5 },
-        { name: "Advanced Software Engineering", td: 10.0, tp: 12.5 },
-        { name: "Advanced Software Engineering", td: 11.0, tp: 12.5 },
+        { name: "Interface Homme Machine", td: 10.0, tp: 12.5 },
+        { name: "Interface Homme Machine", td: 10.0, tp: 12.5 },
+        { name: "Interface Homme Machine", td: 10.0, tp: 12.5 },
+        { name: "Interface Homme Machine", td: 11.0, tp: 12.5 },
         {
-            name: "Advanced Software Engineering",
+            name: "Interface Homme Machine",
             td: 6.0,
             tp: 12.5,
             td_fail: true,

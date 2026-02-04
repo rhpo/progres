@@ -1,6 +1,7 @@
 <script>
     import { goto } from "$app/navigation";
     import { isCardExpanded, selectedCard } from "$lib/stores.js";
+    import { Bell, Mic, Pizza, Search } from "@lucide/svelte";
     const quickAccess = [
         {
             title: "My Courses",
@@ -15,12 +16,12 @@
         {
             title: "Academic Progress",
             icon: "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-1.006 3.502 3.502 0 014.438 0 3.42 3.42 0 001.946 1.006 3.502 3.502 0 010 4.606 3.42 3.42 0 00-1.006 1.946 3.502 3.502 0 010 4.438 3.42 3.42 0 001.006 1.946 3.502 3.502 0 01-4.438 0 3.42 3.42 0 00-1.946-1.006 3.502 3.502 0 01-4.438 0 3.42 3.42 0 00-1.946 1.006 3.502 3.502 0 010-4.606 3.42 3.42 0 001.006-1.946 3.502 3.502 0 010-4.438 3.42 3.42 0 00-1.006-1.946 3.502 3.502 0 014.438 0z",
-            path: "#",
+            path: "/courses",
         },
         {
-            title: "Events & Announcements",
-            icon: "M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9",
-            path: "#",
+            title: "Food & Tickets",
+            icon: Pizza,
+            path: "/docs/food",
         },
     ];
 
@@ -79,55 +80,18 @@
             aria-label="Notifications"
             onclick={() => goto("/notifications")}
         >
-            <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                ><path
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                /></svg
-            >
+            <Bell />
         </button>
     </header>
 
     <div class="search-container">
         <div class="search-bar">
-            <svg
-                class="search-icon"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                ><circle cx="11" cy="11" r="8" /><path
-                    d="M21 21l-4.35-4.35"
-                /></svg
-            >
+            <Search color="currentColor" strokeWidth="1" />
             <input
                 type="text"
                 placeholder="Search courses, professors, services"
             />
-            <svg
-                class="mic-icon"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                ><path
-                    d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
-                /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line
-                    x1="12"
-                    y1="19"
-                    x2="12"
-                    y2="23"
-                /><line x1="8" y1="23" x2="16" y2="23" /></svg
-            >
+            <Mic color="currentColor" strokeWidth="1" />
         </div>
     </div>
 
@@ -186,14 +150,19 @@
             {#each quickAccess as item}
                 <a href={item.path} class="access-card">
                     <div class="card-top">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#114a32"
-                            stroke-width="1.5"><path d={item.icon}></path></svg
-                        >
+                        {#if typeof item.icon === "string"}
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#114a32"
+                                stroke-width="1.5"
+                                ><path d={item.icon}></path></svg
+                            >
+                        {:else}
+                            <item.icon strokeWidth="1.5" color="#114a32" />
+                        {/if}
                         <div class="arrow-circle">
                             <svg
                                 width="12"
@@ -260,7 +229,7 @@
         margin-bottom: 24px;
     }
     .search-bar {
-        background: #eef1f1;
+        background: #e0e9eb;
         border-radius: 100px;
         padding: 12px 16px;
         display: flex;
@@ -271,6 +240,7 @@
         border: none;
         background: transparent;
         flex: 1;
+        font-family: Inter, sans-serif !important;
         font-size: 14px;
         outline: none;
         color: #1c1c1e;

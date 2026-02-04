@@ -23,12 +23,12 @@
     const jobs = [
         {
             id: 1,
-            title: "Open Admission stages",
+            title: "Stage SONATRACH",
             image: "/job1.png",
         },
         {
             id: 2,
-            title: "Scholarship Opport...",
+            title: "Contribution au club CODIHA",
             image: "/job2.png",
         },
     ];
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="food-card">
+        <a href="/docs/food" class="food-card">
             <div class="food-left">
                 <div class="coffee-icon">
                     <svg
@@ -68,7 +68,7 @@
                 </div>
                 <span class="food-label">Food services</span>
             </div>
-            <button class="arrow-btn" aria-label="View food services">
+            <div class="arrow-btn">
                 <svg
                     width="20"
                     height="20"
@@ -77,8 +77,8 @@
                     stroke="white"
                     stroke-width="3"><path d="M9 18l6-6-6-6" /></svg
                 >
-            </button>
-        </div>
+            </div>
+        </a>
 
         <section class="content-section">
             <div class="section-header">
@@ -258,6 +258,7 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        text-decoration: none;
     }
 
     .food-left {
